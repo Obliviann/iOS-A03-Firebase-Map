@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF51A80B23587EDD00FC518E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF51A80A23587EDD00FC518E /* AppDelegate.swift */; };
+		EF51A80D23587EDD00FC518E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF51A80C23587EDD00FC518E /* ViewController.swift */; };
+		EF51A81023587EDE00FC518E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF51A80E23587EDE00FC518E /* Main.storyboard */; };
+		EF51A81223587EE500FC518E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF51A81123587EE500FC518E /* Assets.xcassets */; };
+		EF51A81523587EE500FC518E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF51A81323587EE500FC518E /* LaunchScreen.storyboard */; };
+		EF51A82023587EE500FC518E /* A03_FirebTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF51A81F23587EE500FC518E /* A03_FirebTests.swift */; };
+		EF51A82B23587EE500FC518E /* A03_FirebUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF51A82A23587EE500FC518E /* A03_FirebUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF51A81C23587EE500FC518E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF51A7FF23587EDD00FC518E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF51A80623587EDD00FC518E;
+			remoteInfo = "A03-Fireb";
+		};
+		EF51A82723587EE500FC518E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF51A7FF23587EDD00FC518E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF51A80623587EDD00FC518E;
+			remoteInfo = "A03-Fireb";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF51A80723587EDD00FC518E /* A03-Fireb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "A03-Fireb.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF51A80A23587EDD00FC518E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF51A80C23587EDD00FC518E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF51A80F23587EDE00FC518E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF51A81123587EE500FC518E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF51A81423587EE500FC518E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF51A81623587EE500FC518E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF51A81B23587EE500FC518E /* A03-FirebTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "A03-FirebTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF51A81F23587EE500FC518E /* A03_FirebTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A03_FirebTests.swift; sourceTree = "<group>"; };
+		EF51A82123587EE500FC518E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF51A82623587EE500FC518E /* A03-FirebUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "A03-FirebUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF51A82A23587EE500FC518E /* A03_FirebUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A03_FirebUITests.swift; sourceTree = "<group>"; };
+		EF51A82C23587EE500FC518E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF51A80423587EDD00FC518E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF51A81823587EE500FC518E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF51A82323587EE500FC518E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF51A7FE23587EDD00FC518E = {
+			isa = PBXGroup;
+			children = (
+				EF51A80923587EDD00FC518E /* A03-Fireb */,
+				EF51A81E23587EE500FC518E /* A03-FirebTests */,
+				EF51A82923587EE500FC518E /* A03-FirebUITests */,
+				EF51A80823587EDD00FC518E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF51A80823587EDD00FC518E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF51A80723587EDD00FC518E /* A03-Fireb.app */,
+				EF51A81B23587EE500FC518E /* A03-FirebTests.xctest */,
+				EF51A82623587EE500FC518E /* A03-FirebUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF51A80923587EDD00FC518E /* A03-Fireb */ = {
+			isa = PBXGroup;
+			children = (
+				EF51A80A23587EDD00FC518E /* AppDelegate.swift */,
+				EF51A80C23587EDD00FC518E /* ViewController.swift */,
+				EF51A80E23587EDE00FC518E /* Main.storyboard */,
+				EF51A81123587EE500FC518E /* Assets.xcassets */,
+				EF51A81323587EE500FC518E /* LaunchScreen.storyboard */,
+				EF51A81623587EE500FC518E /* Info.plist */,
+			);
+			path = "A03-Fireb";
+			sourceTree = "<group>";
+		};
+		EF51A81E23587EE500FC518E /* A03-FirebTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF51A81F23587EE500FC518E /* A03_FirebTests.swift */,
+				EF51A82123587EE500FC518E /* Info.plist */,
+			);
+			path = "A03-FirebTests";
+			sourceTree = "<group>";
+		};
+		EF51A82923587EE500FC518E /* A03-FirebUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EF51A82A23587EE500FC518E /* A03_FirebUITests.swift */,
+				EF51A82C23587EE500FC518E /* Info.plist */,
+			);
+			path = "A03-FirebUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF51A80623587EDD00FC518E /* A03-Fireb */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF51A82F23587EE500FC518E /* Build configuration list for PBXNativeTarget "A03-Fireb" */;
+			buildPhases = (
+				EF51A80323587EDD00FC518E /* Sources */,
+				EF51A80423587EDD00FC518E /* Frameworks */,
+				EF51A80523587EDD00FC518E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "A03-Fireb";
+			productName = "A03-Fireb";
+			productReference = EF51A80723587EDD00FC518E /* A03-Fireb.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF51A81A23587EE500FC518E /* A03-FirebTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF51A83223587EE500FC518E /* Build configuration list for PBXNativeTarget "A03-FirebTests" */;
+			buildPhases = (
+				EF51A81723587EE500FC518E /* Sources */,
+				EF51A81823587EE500FC518E /* Frameworks */,
+				EF51A81923587EE500FC518E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF51A81D23587EE500FC518E /* PBXTargetDependency */,
+			);
+			name = "A03-FirebTests";
+			productName = "A03-FirebTests";
+			productReference = EF51A81B23587EE500FC518E /* A03-FirebTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EF51A82523587EE500FC518E /* A03-FirebUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF51A83523587EE500FC518E /* Build configuration list for PBXNativeTarget "A03-FirebUITests" */;
+			buildPhases = (
+				EF51A82223587EE500FC518E /* Sources */,
+				EF51A82323587EE500FC518E /* Frameworks */,
+				EF51A82423587EE500FC518E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF51A82823587EE500FC518E /* PBXTargetDependency */,
+			);
+			name = "A03-FirebUITests";
+			productName = "A03-FirebUITests";
+			productReference = EF51A82623587EE500FC518E /* A03-FirebUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF51A7FF23587EDD00FC518E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = Olivia;
+				TargetAttributes = {
+					EF51A80623587EDD00FC518E = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					EF51A81A23587EE500FC518E = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = EF51A80623587EDD00FC518E;
+					};
+					EF51A82523587EE500FC518E = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = EF51A80623587EDD00FC518E;
+					};
+				};
+			};
+			buildConfigurationList = EF51A80223587EDD00FC518E /* Build configuration list for PBXProject "A03-Fireb" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF51A7FE23587EDD00FC518E;
+			productRefGroup = EF51A80823587EDD00FC518E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF51A80623587EDD00FC518E /* A03-Fireb */,
+				EF51A81A23587EE500FC518E /* A03-FirebTests */,
+				EF51A82523587EE500FC518E /* A03-FirebUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF51A80523587EDD00FC518E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF51A81523587EE500FC518E /* LaunchScreen.storyboard in Resources */,
+				EF51A81223587EE500FC518E /* Assets.xcassets in Resources */,
+				EF51A81023587EDE00FC518E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF51A81923587EE500FC518E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF51A82423587EE500FC518E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF51A80323587EDD00FC518E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF51A80D23587EDD00FC518E /* ViewController.swift in Sources */,
+				EF51A80B23587EDD00FC518E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF51A81723587EE500FC518E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF51A82023587EE500FC518E /* A03_FirebTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF51A82223587EE500FC518E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF51A82B23587EE500FC518E /* A03_FirebUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF51A81D23587EE500FC518E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF51A80623587EDD00FC518E /* A03-Fireb */;
+			targetProxy = EF51A81C23587EE500FC518E /* PBXContainerItemProxy */;
+		};
+		EF51A82823587EE500FC518E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF51A80623587EDD00FC518E /* A03-Fireb */;
+			targetProxy = EF51A82723587EE500FC518E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF51A80E23587EDE00FC518E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF51A80F23587EDE00FC518E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF51A81323587EE500FC518E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF51A81423587EE500FC518E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF51A82D23587EE500FC518E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF51A82E23587EE500FC518E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF51A83023587EE500FC518E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "A03-Fireb/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "sf.A03-Fireb";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF51A83123587EE500FC518E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "A03-Fireb/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "sf.A03-Fireb";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EF51A83323587EE500FC518E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "A03-FirebTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "sf.A03-FirebTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/A03-Fireb.app/A03-Fireb";
+			};
+			name = Debug;
+		};
+		EF51A83423587EE500FC518E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "A03-FirebTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "sf.A03-FirebTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/A03-Fireb.app/A03-Fireb";
+			};
+			name = Release;
+		};
+		EF51A83623587EE500FC518E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "A03-FirebUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "sf.A03-FirebUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "A03-Fireb";
+			};
+			name = Debug;
+		};
+		EF51A83723587EE500FC518E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "A03-FirebUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "sf.A03-FirebUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "A03-Fireb";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF51A80223587EDD00FC518E /* Build configuration list for PBXProject "A03-Fireb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF51A82D23587EE500FC518E /* Debug */,
+				EF51A82E23587EE500FC518E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF51A82F23587EE500FC518E /* Build configuration list for PBXNativeTarget "A03-Fireb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF51A83023587EE500FC518E /* Debug */,
+				EF51A83123587EE500FC518E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF51A83223587EE500FC518E /* Build configuration list for PBXNativeTarget "A03-FirebTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF51A83323587EE500FC518E /* Debug */,
+				EF51A83423587EE500FC518E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF51A83523587EE500FC518E /* Build configuration list for PBXNativeTarget "A03-FirebUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF51A83623587EE500FC518E /* Debug */,
+				EF51A83723587EE500FC518E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF51A7FF23587EDD00FC518E /* Project object */;
+}
