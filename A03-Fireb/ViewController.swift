@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import FirebaseAuth
+//import FirebaseCore   here??
+//import FirebaseFirestore
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        //TODO: crear un usuario nuevo : createUser()
     }
 
     override func didReceiveMemoryWarning() {

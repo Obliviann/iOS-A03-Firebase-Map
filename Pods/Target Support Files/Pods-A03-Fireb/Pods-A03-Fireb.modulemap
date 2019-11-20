@@ -1,0 +1,6 @@
+framework module Pods_A03_Fireb {
+  umbrella header "Pods-A03-Fireb-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85D0D9D86D8506C61336F83F /* Pods_A03_Fireb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17BFB51BD893911369E34002 /* Pods_A03_Fireb.framework */; };
 		EF51A80B23587EDD00FC518E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF51A80A23587EDD00FC518E /* AppDelegate.swift */; };
 		EF51A80D23587EDD00FC518E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF51A80C23587EDD00FC518E /* ViewController.swift */; };
 		EF51A81023587EDE00FC518E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF51A80E23587EDE00FC518E /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		EF51A81523587EE500FC518E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF51A81323587EE500FC518E /* LaunchScreen.storyboard */; };
 		EF51A82023587EE500FC518E /* A03_FirebTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF51A81F23587EE500FC518E /* A03_FirebTests.swift */; };
 		EF51A82B23587EE500FC518E /* A03_FirebUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF51A82A23587EE500FC518E /* A03_FirebUITests.swift */; };
+		EF51A8392358910E00FC518E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF51A8382358910E00FC518E /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17BFB51BD893911369E34002 /* Pods_A03_Fireb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_A03_Fireb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63450212F04C884DE3F5F02B /* Pods_A03_FirebTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_A03_FirebTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B384A86CA5C3BD2A7482D37B /* Pods_A03_FirebUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_A03_FirebUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5BC430CB5E5C66CF1406F09 /* Pods-A03-Fireb.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-A03-Fireb.debug.xcconfig"; path = "Pods/Target Support Files/Pods-A03-Fireb/Pods-A03-Fireb.debug.xcconfig"; sourceTree = "<group>"; };
+		E74E93B7E4157173855CA17D /* Pods-A03-Fireb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-A03-Fireb.release.xcconfig"; path = "Pods/Target Support Files/Pods-A03-Fireb/Pods-A03-Fireb.release.xcconfig"; sourceTree = "<group>"; };
 		EF51A80723587EDD00FC518E /* A03-Fireb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "A03-Fireb.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF51A80A23587EDD00FC518E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF51A80C23587EDD00FC518E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +54,7 @@
 		EF51A82623587EE500FC518E /* A03-FirebUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "A03-FirebUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF51A82A23587EE500FC518E /* A03_FirebUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A03_FirebUITests.swift; sourceTree = "<group>"; };
 		EF51A82C23587EE500FC518E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF51A8382358910E00FC518E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85D0D9D86D8506C61336F83F /* Pods_A03_Fireb.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		41DCC66F7E02A797B0FA9862 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D5BC430CB5E5C66CF1406F09 /* Pods-A03-Fireb.debug.xcconfig */,
+				E74E93B7E4157173855CA17D /* Pods-A03-Fireb.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EF51A7FE23587EDD00FC518E = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +99,8 @@
 				EF51A81E23587EE500FC518E /* A03-FirebTests */,
 				EF51A82923587EE500FC518E /* A03-FirebUITests */,
 				EF51A80823587EDD00FC518E /* Products */,
+				41DCC66F7E02A797B0FA9862 /* Pods */,
+				FF94D6F4818F14E6133EFB75 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +123,7 @@
 				EF51A81123587EE500FC518E /* Assets.xcassets */,
 				EF51A81323587EE500FC518E /* LaunchScreen.storyboard */,
 				EF51A81623587EE500FC518E /* Info.plist */,
+				EF51A8382358910E00FC518E /* GoogleService-Info.plist */,
 			);
 			path = "A03-Fireb";
 			sourceTree = "<group>";
@@ -125,6 +146,16 @@
 			path = "A03-FirebUITests";
 			sourceTree = "<group>";
 		};
+		FF94D6F4818F14E6133EFB75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17BFB51BD893911369E34002 /* Pods_A03_Fireb.framework */,
+				63450212F04C884DE3F5F02B /* Pods_A03_FirebTests.framework */,
+				B384A86CA5C3BD2A7482D37B /* Pods_A03_FirebUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +163,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF51A82F23587EE500FC518E /* Build configuration list for PBXNativeTarget "A03-Fireb" */;
 			buildPhases = (
+				B9A952A6D8AFD5A7F4ED8061 /* [CP] Check Pods Manifest.lock */,
 				EF51A80323587EDD00FC518E /* Sources */,
 				EF51A80423587EDD00FC518E /* Frameworks */,
 				EF51A80523587EDD00FC518E /* Resources */,
+				5ED0AD142454A0FD7F423120 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -230,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF51A81523587EE500FC518E /* LaunchScreen.storyboard in Resources */,
+				EF51A8392358910E00FC518E /* GoogleService-Info.plist in Resources */,
 				EF51A81223587EE500FC518E /* Assets.xcassets in Resources */,
 				EF51A81023587EDE00FC518E /* Main.storyboard in Resources */,
 			);
@@ -250,6 +284,59 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5ED0AD142454A0FD7F423120 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-A03-Fireb/Pods-A03-Fireb-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-A03-Fireb/Pods-A03-Fireb-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9A952A6D8AFD5A7F4ED8061 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-A03-Fireb-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EF51A80323587EDD00FC518E /* Sources */ = {
@@ -428,6 +515,7 @@
 		};
 		EF51A83023587EE500FC518E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5BC430CB5E5C66CF1406F09 /* Pods-A03-Fireb.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -436,7 +524,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "sf.A03-Fireb";
+				PRODUCT_BUNDLE_IDENTIFIER = com.utadOSF.Fireb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -445,6 +533,7 @@
 		};
 		EF51A83123587EE500FC518E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E74E93B7E4157173855CA17D /* Pods-A03-Fireb.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -453,7 +542,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "sf.A03-Fireb";
+				PRODUCT_BUNDLE_IDENTIFIER = com.utadOSF.Fireb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
