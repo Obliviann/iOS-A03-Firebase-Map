@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import Firebase
 import FirebaseAuth
-//import FirebaseCore   here??
-//import FirebaseFirestore
+import FirebaseCore
+import FirebaseFirestore
 
 class ViewController: UIViewController {
 
