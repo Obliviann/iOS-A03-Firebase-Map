@@ -27,7 +27,10 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func CancelButton(_ sender: Any) {
+        //NEVER GO BACK TO A VIEW CONTROLLER WITH A TRIG SEG
         //self.performSegue(withIdentifier: "transCancel", sender: self)
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginVC")
+        self.present(vc!, animated: true, completion: nil)
     }
     
     @IBAction func CreateAccountButton(_ sender: Any) {
@@ -36,6 +39,7 @@ class SignUpViewController: UIViewController {
             let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
             alertController.addAction(defaultAction)
             self.present(alertController, animated: true, completion: nil)
+            print("Cancel button clicked!")
         }
         else {
             //Create new user - store data in Firebase
