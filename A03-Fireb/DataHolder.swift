@@ -19,4 +19,6 @@ class DataHolder: NSObject {
     func initFirebase() {
         FirebaseApp.configure()
     }
+    
+    //func ifUserStateChanges
 }
