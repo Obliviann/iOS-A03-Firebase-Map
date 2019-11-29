@@ -13,3 +13,11 @@ target 'A03-Fireb' do
   # Firebase pod for Google Analytics
   # pod 'Firebase/Analytics'
 end
+
+# target 'A03-FirebTests' do
+# inherit! :search_paths
+    # Pods for testing
+#end
+# target 'A03-FirebUITests' do
+# inherit! :search_paths
+    # Pods for testing end

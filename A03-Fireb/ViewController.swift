@@ -8,8 +8,8 @@
 
 import UIKit
 import Firebase
-import FirebaseAuth
-import FirebaseCore
+//import FirebaseAuth
+//import FirebaseCore
 import FirebaseFirestore
 
 class ViewController: UIViewController {
