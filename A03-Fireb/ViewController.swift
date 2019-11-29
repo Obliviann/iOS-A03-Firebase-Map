@@ -12,9 +12,9 @@ import Firebase
 class ViewController: UIViewController {
 
     //1. create vars
-    @IBOutlet weak var username: UITextField?
-    @IBOutlet weak var password: UITextField?
-    @IBOutlet weak var loginBtn: UIButton?
+    @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var loginBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,11 +30,12 @@ class ViewController: UIViewController {
 
     //1. create action
     @IBAction func LoginButon(_ sender: UIButton) {
-        print("Login Button clicked! " + (username?.text)! )
+        print("Login Button clicked!" )
+
     }
     
     @IBAction func SignUpButton(_ sender: Any) {
-        self.performSegue(withIdentifier: "transSignUp", sender: self)
+        //self.performSegue(withIdentifier: "transSignUp", sender: self)
     }
 
 }

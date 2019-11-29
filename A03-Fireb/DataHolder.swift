@@ -19,7 +19,7 @@ class DataHolder: NSObject {
     
     //2.
     func initFirebase() {
-        //use FIrebase lib to configure APIs
+        //use Firebase lib to configure APIs
         FirebaseApp.configure()
     }
     

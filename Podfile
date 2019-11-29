@@ -6,12 +6,11 @@ target 'A03-Fireb' do
   use_frameworks!
   
   # Pods for A03-Fireb
-  pod 'Firebase', '~>6.1.0'
+  pod 'Firebase'
   pod 'Firebase/Core'
-  pod 'Firebase/Auth'
-  # Firebase pod for Google Analytics
   pod 'Firebase/Analytics'
-  pod 'Firebase/Firestore’
+  pod 'Firebase/Auth'
+  
   
 end
 

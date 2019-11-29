@@ -13,12 +13,12 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="A03_Fireb" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginVC" id="BYZ-38-t0r" customClass="ViewController" customModule="A03_Fireb" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="STE-0N-aNu">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="STE-0N-aNu">
                                 <rect key="frame" x="139" y="318" width="97" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Oom-Cn-fOz"/>
@@ -116,9 +116,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="email" destination="STE-0N-aNu" id="xGv-KK-7pB"/>
                         <outlet property="loginBtn" destination="a1l-ME-fI4" id="E2E-7H-hdQ"/>
                         <outlet property="password" destination="NE8-rc-u8d" id="0Cg-7i-P83"/>
-                        <outlet property="username" destination="STE-0N-aNu" id="8Kr-JC-rPT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -233,6 +233,7 @@
                     </view>
                     <connections>
                         <outlet property="email" destination="N8D-xz-i4L" id="o34-ef-h7t"/>
+                        <outlet property="passConfirm" destination="iYX-Kq-mXn" id="1Dg-I9-IcU"/>
                         <outlet property="password" destination="PKF-6e-Z3U" id="zTH-7z-qMI"/>
                     </connections>
                 </viewController>

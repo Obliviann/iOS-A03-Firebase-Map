@@ -33,7 +33,6 @@ static NSString *const kGTMSessionHeaderXGoogUploadContentLength    = @"X-Goog-U
 static NSString *const kGTMSessionHeaderXGoogUploadContentType      = @"X-Goog-Upload-Content-Type";
 static NSString *const kGTMSessionHeaderXGoogUploadOffset           = @"X-Goog-Upload-Offset";
 static NSString *const kGTMSessionHeaderXGoogUploadProtocol         = @"X-Goog-Upload-Protocol";
-static NSString *const kGTMSessionXGoogUploadProtocolResumable      = @"resumable";
 static NSString *const kGTMSessionHeaderXGoogUploadSizeReceived     = @"X-Goog-Upload-Size-Received";
 static NSString *const kGTMSessionHeaderXGoogUploadStatus           = @"X-Goog-Upload-Status";
 static NSString *const kGTMSessionHeaderXGoogUploadURL              = @"X-Goog-Upload-URL";
@@ -268,21 +267,18 @@ NSString *const kGTMSessionFetcherUploadLocationObtainedNotification =
 }
 
 + (NSArray *)uploadFetchersForBackgroundSessions {
+  // Collect the background session upload fetchers that are still in memory.
+  NSPointerArray *uploadFetcherPointerArray = [self uploadFetcherPointerArrayForBackgroundSessions];
+  [uploadFetcherPointerArray compact];
   NSMutableSet *restoredSessionIdentifiers = [[NSMutableSet alloc] init];
   NSMutableArray *uploadFetchers = [[NSMutableArray alloc] init];
-  NSPointerArray *uploadFetcherPointerArray = [self uploadFetcherPointerArrayForBackgroundSessions];
-
-  // Collect the background session upload fetchers that are still in memory.
-  @synchronized(uploadFetcherPointerArray) {
-    [uploadFetcherPointerArray compact];
-    for (GTMSessionUploadFetcher *uploadFetcher in uploadFetcherPointerArray) {
-      NSString *sessionIdentifier = uploadFetcher.chunkFetcher.sessionIdentifier;
-      if (sessionIdentifier) {
-        [restoredSessionIdentifiers addObject:sessionIdentifier];
-        [uploadFetchers addObject:uploadFetcher];
-      }
+  for (GTMSessionUploadFetcher *uploadFetcher in uploadFetcherPointerArray) {
+    NSString *sessionIdentifier = uploadFetcher.chunkFetcher.sessionIdentifier;
+    if (sessionIdentifier) {
+      [restoredSessionIdentifiers addObject:sessionIdentifier];
+      [uploadFetchers addObject:uploadFetcher];
     }
-  }  // @synchronized(uploadFetcherPointerArray)
+  }
 
   // The system may have other ongoing background upload sessions. Restore upload fetchers for those
   // too.
@@ -483,7 +479,7 @@ NSString *const kGTMSessionFetcherUploadLocationObtainedNotification =
                           @"Request and location are mutually exclusive");
   if (!mutableRequest) return;
 
-  [mutableRequest setValue:kGTMSessionXGoogUploadProtocolResumable
+  [mutableRequest setValue:@"resumable"
         forHTTPHeaderField:kGTMSessionHeaderXGoogUploadProtocol];
   [mutableRequest setValue:@"start"
         forHTTPHeaderField:kGTMSessionHeaderXGoogUploadCommand];
@@ -1336,17 +1332,11 @@ NSString *const kGTMSessionFetcherUploadLocationObtainedNotification =
   [chunkRequest setHTTPMethod:@"PUT"];
 
   // copy the user-agent from the original connection
-  // n.b. that self.request is nil for upload fetchers created with an existing upload location
-  // URL.
   NSURLRequest *origRequest = self.request;
   NSString *userAgent = [origRequest valueForHTTPHeaderField:@"User-Agent"];
   if (userAgent.length > 0) {
     [chunkRequest setValue:userAgent forHTTPHeaderField:@"User-Agent"];
   }
-
-  [chunkRequest setValue:kGTMSessionXGoogUploadProtocolResumable
-      forHTTPHeaderField:kGTMSessionHeaderXGoogUploadProtocol];
-
   // To avoid timeouts when debugging, copy the timeout of the initial fetcher.
   NSTimeInterval origTimeout = [origRequest timeoutInterval];
   [chunkRequest setTimeoutInterval:origTimeout];
@@ -1788,16 +1778,14 @@ NSString *const kGTMSessionFetcherUploadLocationObtainedNotification =
       _useBackgroundSessionOnChunkFetchers = useBackgroundSession;
       NSPointerArray *uploadFetcherPointerArrayForBackgroundSessions =
           [[self class] uploadFetcherPointerArrayForBackgroundSessions];
-      @synchronized(uploadFetcherPointerArrayForBackgroundSessions) {
-        if (_useBackgroundSessionOnChunkFetchers) {
-          [uploadFetcherPointerArrayForBackgroundSessions addPointer:(__bridge void *)self];
-        } else {
-          [[self class] removePointer:(__bridge void *)self
-                     fromPointerArray:uploadFetcherPointerArrayForBackgroundSessions];
-        }
-      }  // @synchronized(uploadFetcherPointerArrayForBackgroundSessions)
+      if (_useBackgroundSessionOnChunkFetchers) {
+        [uploadFetcherPointerArrayForBackgroundSessions addPointer:(__bridge void *)self];
+      } else {
+        [[self class] removePointer:(__bridge void *)self
+                   fromPointerArray:uploadFetcherPointerArrayForBackgroundSessions];
+      }
     }
-  }  // @synchronized(self)
+  }  // @synchronized(self
 }
 
 - (BOOL)canFetchWithBackgroundSession {
