@@ -7,11 +7,12 @@ target 'A03-Fireb' do
   
   # Pods for A03-Fireb
   pod 'Firebase', '~>6.1.0'
-  pod 'Firebase/Auth'
   pod 'Firebase/Core'
-  pod 'Firebase/Firestore’
+  pod 'Firebase/Auth'
   # Firebase pod for Google Analytics
-  # pod 'Firebase/Analytics'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Firestore’
+  
 end
 
 # target 'A03-FirebTests' do

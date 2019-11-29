@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import Firebase
 
 class SignUpViewController: UIViewController {
 
+    @IBOutlet weak var email: UITextField?
+    @IBOutlet weak var password: UITextField?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,6 +27,9 @@ class SignUpViewController: UIViewController {
     
     @IBAction func CancelButton(_ sender: Any) {
         self.performSegue(withIdentifier: "transCancel", sender: self)
+    }
+    
+    @IBAction func CreateAccountButton(_ sender: Any) {
     }
     
     /*

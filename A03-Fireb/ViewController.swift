@@ -8,9 +8,6 @@
 
 import UIKit
 import Firebase
-//import FirebaseAuth
-//import FirebaseCore
-import FirebaseFirestore
 
 class ViewController: UIViewController {
 
@@ -23,6 +20,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         //TODO: crear un usuario nuevo : createUser()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,13 +31,10 @@ class ViewController: UIViewController {
     //1. create action
     @IBAction func LoginButon(_ sender: UIButton) {
         print("Login Button clicked! " + (username?.text)! )
-        
     }
-    
     
     @IBAction func SignUpButton(_ sender: Any) {
-        //llamo a un met própio                          //clase que llama a esta transición, remitente
         self.performSegue(withIdentifier: "transSignUp", sender: self)
     }
-}
 
+}

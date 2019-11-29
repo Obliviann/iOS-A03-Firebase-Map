@@ -200,6 +200,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOY-Z4-DeD">
                                 <rect key="frame" x="58" y="510" width="105" height="30"/>
                                 <state key="normal" title="Create account"/>
+                                <connections>
+                                    <action selector="CreateAccountButton:" destination="fpf-8E-S5S" eventType="touchUpInside" id="ndV-ci-JRn"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -228,6 +231,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Cb7-Tx-Vpk"/>
                     </view>
+                    <connections>
+                        <outlet property="email" destination="N8D-xz-i4L" id="o34-ef-h7t"/>
+                        <outlet property="password" destination="PKF-6e-Z3U" id="zTH-7z-qMI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tlR-YY-pJC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
