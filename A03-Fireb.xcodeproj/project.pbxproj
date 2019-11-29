@@ -124,12 +124,12 @@
 				EF51A80A23587EDD00FC518E /* AppDelegate.swift */,
 				EF99DEB2238FF77200C1C817 /* DataHolder.swift */,
 				EF51A80C23587EDD00FC518E /* ViewController.swift */,
+				EF2C34C123916EDD00994F46 /* SignUpViewController.swift */,
 				EF51A80E23587EDE00FC518E /* Main.storyboard */,
 				EF51A81123587EE500FC518E /* Assets.xcassets */,
 				EF51A81323587EE500FC518E /* LaunchScreen.storyboard */,
 				EF51A81623587EE500FC518E /* Info.plist */,
 				EF51A8382358910E00FC518E /* GoogleService-Info.plist */,
-				EF2C34C123916EDD00994F46 /* SignUpViewController.swift */,
 			);
 			path = "A03-Fireb";
 			sourceTree = "<group>";

@@ -14,6 +14,7 @@ import FirebaseFirestore
 
 class ViewController: UIViewController {
 
+    //1. create vars
     @IBOutlet weak var username: UITextField?
     @IBOutlet weak var password: UITextField?
     @IBOutlet weak var loginBtn: UIButton?
@@ -29,9 +30,16 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    //1. create action
     @IBAction func LoginButon(_ sender: UIButton) {
         print("Login Button clicked! " + (username?.text)! )
+        
     }
     
+    
+    @IBAction func SignUpButton(_ sender: Any) {
+        //llamo a un met própio                          //clase que llama a esta transición, remitente
+        self.performSegue(withIdentifier: "transSignUp", sender: self)
+    }
 }
 

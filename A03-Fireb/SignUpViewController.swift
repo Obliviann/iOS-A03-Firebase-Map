@@ -21,7 +21,10 @@ class SignUpViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func CancelButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "transCancel", sender: self)
+    }
+    
     /*
     // MARK: - Navigation
 
