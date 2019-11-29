@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		85D0D9D86D8506C61336F83F /* Pods_A03_Fireb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17BFB51BD893911369E34002 /* Pods_A03_Fireb.framework */; };
+		EF2C34C223916EDD00994F46 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C34C123916EDD00994F46 /* SignUpViewController.swift */; };
 		EF51A80B23587EDD00FC518E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF51A80A23587EDD00FC518E /* AppDelegate.swift */; };
 		EF51A80D23587EDD00FC518E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF51A80C23587EDD00FC518E /* ViewController.swift */; };
 		EF51A81023587EDE00FC518E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF51A80E23587EDE00FC518E /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 		B384A86CA5C3BD2A7482D37B /* Pods_A03_FirebUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_A03_FirebUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5BC430CB5E5C66CF1406F09 /* Pods-A03-Fireb.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-A03-Fireb.debug.xcconfig"; path = "Pods/Target Support Files/Pods-A03-Fireb/Pods-A03-Fireb.debug.xcconfig"; sourceTree = "<group>"; };
 		E74E93B7E4157173855CA17D /* Pods-A03-Fireb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-A03-Fireb.release.xcconfig"; path = "Pods/Target Support Files/Pods-A03-Fireb/Pods-A03-Fireb.release.xcconfig"; sourceTree = "<group>"; };
+		EF2C34C123916EDD00994F46 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		EF51A80723587EDD00FC518E /* A03-Fireb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "A03-Fireb.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF51A80A23587EDD00FC518E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF51A80C23587EDD00FC518E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				EF51A81323587EE500FC518E /* LaunchScreen.storyboard */,
 				EF51A81623587EE500FC518E /* Info.plist */,
 				EF51A8382358910E00FC518E /* GoogleService-Info.plist */,
+				EF2C34C123916EDD00994F46 /* SignUpViewController.swift */,
 			);
 			path = "A03-Fireb";
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 			files = (
 				EF51A80D23587EDD00FC518E /* ViewController.swift in Sources */,
 				EF99DEB3238FF77200C1C817 /* DataHolder.swift in Sources */,
+				EF2C34C223916EDD00994F46 /* SignUpViewController.swift in Sources */,
 				EF51A80B23587EDD00FC518E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
