@@ -61,25 +61,31 @@ class MapVC: UIViewController {
         switch CLLocationManager.authorizationStatus() {
         case .authorizedAlways:
             //not asking for so much permisssions, just:
+            locManager.requestWhenInUseAuthorization()
+            print("ALWAYS")
             break
         case .authorizedWhenInUse:
-            //
+            print("WHENINUSE")
             MapView.showsUserLocation = true
-            centerViewOnLocation()
+            //centerViewOnLocation()
             break
         case .notDetermined:
             locManager.requestWhenInUseAuthorization()
             //must activate description in Info.plist !
+            print("NOTDETERMINED")
             break
         case .restricted:
             //the user CANNOT change this app status, poss due to parental control
             //show alert
             locManager.requestWhenInUseAuthorization()
+            print("RESTRICTED")
             break
         case .denied:
             //Show alert asking them to authorize
+            print("DENIED")
             locManager.requestWhenInUseAuthorization()
-            //I think this does not work because you must change this in settings, you can't directly from the app
+            //I think this does not work because you must change this from the phone's settings, you can't directly from the app.
+            //DEINSTALL THE APP FROM THE PHONE U BITCH
             break
         }
     }
