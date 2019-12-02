@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		85D0D9D86D8506C61336F83F /* Pods_A03_Fireb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17BFB51BD893911369E34002 /* Pods_A03_Fireb.framework */; };
+		EF159D3823958319009B5B26 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF159D3723958319009B5B26 /* MapKit.framework */; };
+		EF159D3A2395841E009B5B26 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF159D392395841E009B5B26 /* MapVC.swift */; };
 		EF2C34C223916EDD00994F46 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C34C123916EDD00994F46 /* SignUpViewController.swift */; };
 		EF51A80B23587EDD00FC518E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF51A80A23587EDD00FC518E /* AppDelegate.swift */; };
 		EF51A80D23587EDD00FC518E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF51A80C23587EDD00FC518E /* ViewController.swift */; };
@@ -43,6 +45,8 @@
 		B384A86CA5C3BD2A7482D37B /* Pods_A03_FirebUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_A03_FirebUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5BC430CB5E5C66CF1406F09 /* Pods-A03-Fireb.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-A03-Fireb.debug.xcconfig"; path = "Pods/Target Support Files/Pods-A03-Fireb/Pods-A03-Fireb.debug.xcconfig"; sourceTree = "<group>"; };
 		E74E93B7E4157173855CA17D /* Pods-A03-Fireb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-A03-Fireb.release.xcconfig"; path = "Pods/Target Support Files/Pods-A03-Fireb/Pods-A03-Fireb.release.xcconfig"; sourceTree = "<group>"; };
+		EF159D3723958319009B5B26 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		EF159D392395841E009B5B26 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		EF2C34C123916EDD00994F46 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		EF51A80723587EDD00FC518E /* A03-Fireb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "A03-Fireb.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF51A80A23587EDD00FC518E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF159D3823958319009B5B26 /* MapKit.framework in Frameworks */,
 				85D0D9D86D8506C61336F83F /* Pods_A03_Fireb.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -125,6 +130,7 @@
 				EF99DEB2238FF77200C1C817 /* DataHolder.swift */,
 				EF51A80C23587EDD00FC518E /* ViewController.swift */,
 				EF2C34C123916EDD00994F46 /* SignUpViewController.swift */,
+				EF159D392395841E009B5B26 /* MapVC.swift */,
 				EF51A80E23587EDE00FC518E /* Main.storyboard */,
 				EF51A81123587EE500FC518E /* Assets.xcassets */,
 				EF51A81323587EE500FC518E /* LaunchScreen.storyboard */,
@@ -155,6 +161,7 @@
 		FF94D6F4818F14E6133EFB75 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EF159D3723958319009B5B26 /* MapKit.framework */,
 				17BFB51BD893911369E34002 /* Pods_A03_Fireb.framework */,
 				63450212F04C884DE3F5F02B /* Pods_A03_FirebTests.framework */,
 				B384A86CA5C3BD2A7482D37B /* Pods_A03_FirebUITests.framework */,
@@ -232,6 +239,11 @@
 				TargetAttributes = {
 					EF51A80623587EDD00FC518E = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					EF51A81A23587EE500FC518E = {
 						CreatedOnToolsVersion = 9.3;
@@ -339,6 +351,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF159D3A2395841E009B5B26 /* MapVC.swift in Sources */,
 				EF51A80D23587EDD00FC518E /* ViewController.swift in Sources */,
 				EF99DEB3238FF77200C1C817 /* DataHolder.swift in Sources */,
 				EF2C34C223916EDD00994F46 /* SignUpViewController.swift in Sources */,
