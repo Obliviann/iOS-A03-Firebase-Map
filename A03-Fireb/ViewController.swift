@@ -31,7 +31,13 @@ class ViewController: UIViewController {
     //1. create action
     @IBAction func LoginButon(_ sender: UIButton) {
         print("Login Button clicked!" )
-
+        Auth.auth().signIn(withEmail: self.email.text!, password: self.password.text!) { (user, error) in
+        if(error==nil){
+            self.performSegue(withIdentifier: "tranLoginSuccess", sender: self)
+        }else{
+            print("ERROR EN LOGIN: ",error!)
+        }
+        }
     }
     
     @IBAction func SignUpButton(_ sender: Any) {

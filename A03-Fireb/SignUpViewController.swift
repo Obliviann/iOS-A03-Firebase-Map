@@ -53,7 +53,7 @@ class SignUpViewController: UIViewController {
                     //self.dismissViewControllerAnimated(true, completion: nil) FROM INTERNET
                     let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginVC")
                     self.present(vc!, animated: true, completion: nil)
-                    print("USER created")
+                    print("USER ",user," was created")
                 }
                 else{
                     let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
