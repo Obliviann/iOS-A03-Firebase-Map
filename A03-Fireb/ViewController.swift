@@ -30,12 +30,18 @@ class ViewController: UIViewController {
 
     //1. create action
     @IBAction func LoginButon(_ sender: UIButton) {
-        print("Login Button clicked!" )
+        print("Login Button clicked!" )//self necessary ???                 //diff of user and AuthDataRsult ???
         Auth.auth().signIn(withEmail: self.email.text!, password: self.password.text!) { (user, error) in
         if(error==nil){
             self.performSegue(withIdentifier: "tranLoginSuccess", sender: self)
+            print("User ",user," signed in")
         }else{
             print("ERROR EN LOGIN: ",error!)
+            let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            
+            alertController.addAction(defaultAction)
+            self.present(alertController, animated: true, completion: nil)
         }
         }
     }
